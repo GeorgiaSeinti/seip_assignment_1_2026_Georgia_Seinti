@@ -26,8 +26,8 @@ jobs:
 
       - name: Build Docker Image
         run: |
-          docker build -t ghcr.io/GeorgiaSeinti/echo-api:latest .
+          docker build -t ghcr.io/georgiaseinti/echo-api:latest .
       
       - name: Push Image to GHCR 
         run: |
-          docker push ghcr.io/GeorgiaSeinti/echo-api:latest
+          docker push ghcr.io/georgiaseinti/echo-api:latest
