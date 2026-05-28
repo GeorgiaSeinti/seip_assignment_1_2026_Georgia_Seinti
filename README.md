@@ -48,8 +48,11 @@ All of the Kubernetes configuration files are located inside the k8s/ directory.
 If everything works properly you should see in the terminal the following output:
 
 `configmap/echo-api-config created`
+
 `deployment.apps/echo-api-deployment created`
+
 `secret/echo-api-secret created`
+
 `service/echo-api-service created`
 
 ---
