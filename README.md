@@ -25,8 +25,9 @@ Before you begin, ensure you have the following tools installed and configured o
 
 To get started, clone the repository to your local machine using the following command
 
-git clone https://github.com/GeorgiaSeinti/seip_assignment_1_2026_Georgia_Seinti.git
-cd seip_assignment_1_2026_Georgia_Seinti
+`git clone https://github.com/GeorgiaSeinti/seip_assignment_1_2026_Georgia_Seinti.git`
+
+`cd seip_assignment_1_2026_Georgia_Seinti`
 
 ---
 
@@ -34,7 +35,7 @@ cd seip_assignment_1_2026_Georgia_Seinti
 
 Before deploying the application, start your local Kubernetes cluster using Minikube. To do that, use the following command
 
-minikube start
+`minikube start`
 
 ---
 
@@ -42,14 +43,14 @@ minikube start
 
 All of the Kubernetes configuration files are located inside the k8s/ directory. In order to deploy the entire application, run the command:
 
-kubectl apply -f k8s/
+`kubectl apply -f k8s/`
 
 If everything works properly you should see in the terminal the following output:
 
-configmap/echo-api-config created
-deployment.apps/echo-api-deployment created
-secret/echo-api-secret created
-service/echo-api-service created
+`configmap/echo-api-config created`
+`deployment.apps/echo-api-deployment created`
+`secret/echo-api-secret created`
+`service/echo-api-service created`
 
 ---
 
@@ -57,7 +58,7 @@ service/echo-api-service created
 
 To confirm that the Kubernetes deployment is running correctly, run the following command:
 
-kubectl get all -n default
+`kubectl get all -n default`
 
 You should see 3 healthy running pods, the deployment status and the ClusterIP service
 
@@ -68,7 +69,7 @@ You should see 3 healthy running pods, the deployment status and the ClusterIP s
 
 In order to map the internal ClusterIP service interface to your local machine network loopback run the following command
 
-kubectl port-forward service/echo-api-service 3000:80
+`kubectl port-forward service/echo-api-service 3000:80`
 
 ---
 
@@ -76,8 +77,8 @@ kubectl port-forward service/echo-api-service 3000:80
 
 The application will be accessible at:
 
-http://localhost:3000
+`http://localhost:3000`
 
 Health endopoint:
 
-http://localhost:3000/health
+`http://localhost:3000/health`
