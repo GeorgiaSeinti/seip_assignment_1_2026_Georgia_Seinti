@@ -23,7 +23,7 @@ Before you begin, ensure you have the following tools installed and configured o
 
 ## 1. Clone the Repository
 
-To get started, clone the repository to your local machine using the following command
+To get started, clone the repository to your local machine using the following command:
 
 `git clone https://github.com/GeorgiaSeinti/seip_assignment_1_2026_Georgia_Seinti.git`
 
@@ -33,7 +33,7 @@ To get started, clone the repository to your local machine using the following c
 
 ## 2. Start Minikube
 
-Before deploying the application, start your local Kubernetes cluster using Minikube. To do that, use the following command
+Before deploying the application, start your local Kubernetes cluster using Minikube. To do that, use the following command:
 
 `minikube start`
 
@@ -70,9 +70,9 @@ You should see 3 healthy running pods, the deployment status and the ClusterIP s
 
 ## 5. Port Forwarding
 
-In order to map the internal ClusterIP service interface to your local machine network loopback run the following command
+In order to map the internal ClusterIP service interface to your local machine network loopback run the following command:
 
-`kubectl port-forward service/echo-api-service 3000:80`
+`kubectl port-forward service/echo-api-service 8080:80`
 
 ---
 
@@ -80,8 +80,8 @@ In order to map the internal ClusterIP service interface to your local machine n
 
 The application will be accessible at:
 
-`http://localhost:3000`
+`http://localhost:8080`
 
 Health endopoint:
 
-`http://localhost:3000/health`
+`http://localhost:8080/health`
